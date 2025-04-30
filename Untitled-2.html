@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="EiMan" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .linha {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .linha label {
+            min-width: 80px;
+        }
+        .campo {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkbox-linha {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularizinho para stalkear vc 😁</h1>
+    <form action="/action_page.php" target="_self">
+
+        <div class="linha">
+            <div class="campo">
+                <label for="fname">Nome:</label>
+                <input type="text" id="fname" name="fname" value="">
+            </div>
+            <div class="campo">
+                <label for="lname">Sobrenome:</label>
+                <input type="text" id="lname" name="lname" value="">
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="campo">
+                <label for="num">Número:</label>
+                <input type="text" id="num" name="num" value="">
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="campo">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" value="">
+            </div>
+            <div class="campo">
+                <label for="CEP">CEP:</label>
+                <input type="text" id="CEP" name="CEP" value="">
+            
+            </div>
+            <div class="campo">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" value="">
+            </div>
+            </div>
+        </div>
+
+        <input type="submit" value="Submit"><br><br>
+    </form>
+
+    <form>
+        <h2>qual animal você tem em casa?</h2>
+        <div class="checkbox-linha">
+        <input type="checkbox" id="pet1" name="pet1" value="cachorro">
+        <label for="pet1"> eu tenho cachorro</label><br>
+        <input type="checkbox" id="pet2" name="pet2" value="gato">
+        <label for="pet2"> eu tenho gato</label><br>
+        <input type="checkbox" id="pet3" name="pet3" value="Outro">
+        <label for="pet3"> Outro</label>
+    </div>
+        <label for="petoutro">Qual Pet(opcional)</label><br>
+        <input type="text" id="petoutro" name="petoutro" value="coloque o seu pet"><br><br>
+    </form>
+</body>
+</html>
+
